@@ -1,7 +1,7 @@
 :root {
     --text-color: #e8f0f8;
-    --background-color: #050a0f;
-    --color-a: #b4c9de;
+    --background-color: #042241;
+    --color-a: #0e4b89;
 }
 
 html {
@@ -27,6 +27,10 @@ html {
     list-style-type: none;
 }
 
+#information-view img {
+    border-radius: 45%;
+}
+
 #projects-view {
     display: flex;
     flex-direction: row;
@@ -45,7 +49,7 @@ html {
     flex-grow: 1;
 
     background-color: var(--color-a);
-    color: var(--background-color);
+    color: var(--text-color);
     border-radius: 5px;
 }
 
@@ -63,4 +67,13 @@ html {
 .projects-mid img {
     border-radius: 5px;
     margin-left: 5px;
+}
+
+.projects-item a {
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+.projects-item a:hover {
+    color: #c7c7c7;
 }
