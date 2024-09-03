@@ -19,23 +19,30 @@ html {
 #information-view {
     margin-top: 20px;
     margin-left: 15px;
-    margin-right: 100px;
-    padding: 50px;
+    margin-right: 70px;
+    padding-top: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
     background: var(--color-b);
     border-radius: 5%;
-    height: 80vh;
-}
-
-#information-view div {
-    margin: 10px;
+    grid-row: 1 / span 2;
 }
 
 #information-view ul {
     list-style-type: none;
 }
 
-#information-view img {
-    border-radius: 45%;
+#avatar {
+    border-radius: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#information-text {
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-top: 20px;
 }
 
 #projects-view {
@@ -121,4 +128,54 @@ html {
     to {
         --angle: 360deg;
     }
+}
+
+#blog {
+    grid-column: 2;
+}
+
+#blog-view {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-left: -30px;
+    margin-top: -10px;
+}
+
+.blog-item {
+    margin: 10px;
+    padding-left: 20px;
+    padding-right: 15px;
+    padding-top: 5px;
+    padding-bottom: 20px;
+    flex-basis: 25%;
+    flex-grow: 1;
+
+    background-color: var(--color-a);
+    color: var(--text-color);
+    border-radius: 5px;
+    position: relative;
+}
+
+.blog-item:hover::before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: conic-gradient(
+        from var(--angle),
+        #ff4545,
+        #00ff99,
+        #006aff,
+        #ff0095,
+        #ff4545
+    );
+    background-radius: 5px;
+    z-index: -1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 2px;
+    filter: blur(0.5rem);
+    animation: 3s spin linear infinite;
 }
