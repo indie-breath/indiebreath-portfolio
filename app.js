@@ -9,8 +9,11 @@ const fm = require("front-matter");
 
 const port = 3000;
 
+let title;
+
 function preprocess(markdown) {
     const { attributes, body } = fm(markdown);
+    title = attributes.title;
 
     for (const prop in attributes) {
         if (prop in this.options) {
@@ -21,7 +24,11 @@ function preprocess(markdown) {
     return body;
 }
 
-marked.use({ hooks: { preprocess } });
+marked.use({
+    hooks: { preprocess },
+    breaks: true,
+    gfm: true,
+});
 
 app.set("view engine", "ejs");
 app.set("views", __dirname + "/pages/blog");
@@ -55,7 +62,7 @@ fs.readdir(__dirname + "/pages/blog", function (err, files) {
         const html = marked.parse(fileContents);
 
         router.get("/blog/" + name, function (req, res) {
-            res.render("blog", { title: name, content: html });
+            res.render("blog-page", { title: title, content: html });
         });
     });
 });

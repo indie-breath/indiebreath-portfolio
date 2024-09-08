@@ -1,0 +1,36 @@
+:root {
+    --text-color: #e8f0f8;
+    --background-color: #010104;
+    --color-a: #141418;
+    --color-b: #101013;
+    --code-color: #d8d8da;
+}
+
+html {
+    background-color: var(--color-a);
+}
+
+div {
+    width: 60%;
+    margin: auto;
+    margin-top: 80px;
+    color: var(--background-color);
+    background-color: white;
+    font-family: sans-serif;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    border-radius: 10px;
+}
+
+pre {
+    background-color: var(--code-color);
+    margin-left: 25px;
+    padding: 5px 10px;
+    width: fit-content;
+}
+
+img {
+    margin: 0;
+}
