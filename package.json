@@ -3,14 +3,17 @@
   "version": "1.0.0",
   "main": "app,js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon app.js"
+    "dev": "nodemon app.js",
+    "start": "node app.js"
   },
   "author": "indie-breath",
   "license": "ISC",
   "description": "",
   "dependencies": {
+    "ejs": "^3.1.10",
     "express": "^4.19.2",
+    "front-matter": "^4.0.2",
+    "marked": "^14.1.1",
     "nodemon": "^3.1.4"
   }
 }
