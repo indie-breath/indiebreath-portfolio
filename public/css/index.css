@@ -179,3 +179,13 @@ html {
     filter: blur(0.5rem);
     animation: 3s spin linear infinite;
 }
+
+
+.blog-item a {
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+.blog-item a:hover {
+    color: #c7c7c7;
+}
