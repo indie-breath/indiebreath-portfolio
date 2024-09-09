@@ -96,7 +96,7 @@ app.listen(port, () => {
 
 This is a simple "Hello World" program using Express. With this code in place, we can open our terminal and run "npm run dev" to start this app using nodemon. Then, if we go to "localhost:8080" in our web browser, we should see a simple page like this:
 
-![A blank page showing "Hello World!" in the corner.](/public/images/nodejs-image-1.jpg)
+![A blank page showing "Hello World!" in the corner.](/public/images/nodejs-blog/nodejs-image-1.jpg)
 
 Additionally, because we are using nodemon, we can simply type "rs" in our terminal to reload the web server instead of having to type Ctrl+c then rerun the start command.
 
@@ -159,7 +159,7 @@ In our index.html file we'll add some basic HTML, another simple Hello World imp
 
 Now if we reload our web server by typing "rs" in the terminal that is running our nodemon, then reload our web page, we should see something similar to this:
 
-![A blank web page except for a Hello World! header and a small welcome paragraph](/public/images/nodejs-image-2.jpg)
+![A blank web page except for a Hello World! header and a small welcome paragraph](/public/images/nodejs-blog/nodejs-image-2.jpg)
 
 But this still needs some styling, we can do by adding a css file to our /public/css folder, making sure to use index.css as the name as we have already referenced that name in our html file. We'll just do some simple styling, but you can do whatever you want in your index.css file.
 
@@ -179,7 +179,7 @@ p {
 
 Which produces the following page:
 
-![A web page with sans-serif font, text in the middle of the screen, and indented header](/public/images/nodejs-image-3.jpg)
+![A web page with sans-serif font, text in the middle of the screen, and indented header](/public/images/nodejs-blog/nodejs-image-3.jpg)
 
 And with that, we have created a simple, example web page using NodeJS and Express. Of course, you can change the index.html and index.css files to be whatever you want them to be and produce whatever page you want, but these basics are enough to get started with a single page.
 
