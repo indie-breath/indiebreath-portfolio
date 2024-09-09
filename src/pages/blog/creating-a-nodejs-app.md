@@ -194,4 +194,4 @@ This may not be the only way, but it is the way I have been using, and it works 
 
 Finally, what's the point of this whole blog and series? There are so many other blogs and tutorials online that will tell you these exact things, and probably do it better than me. I am simply doing this because in addition to wanting to put my own information out on the internet, I also want to talk about my journey in developing this website and the things and technologies that I have learned. Maybe by providing this information, someone wanting to do the same things that I have will more easily overcome the roadblocks I've encountered.
 
-But with that, I hope that this was information for you, and I hope to see you in the next post, detailing the next part of my development journey.
+But with that, I hope that this was informative for you, and I hope to see you in the next post, detailing the next part of my development journey.
