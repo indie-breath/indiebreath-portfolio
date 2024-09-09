@@ -8,6 +8,7 @@ const fs = require("fs");
 const fm = require("front-matter");
 
 const port = 3000;
+const pages = __dirname + "/src/pages";
 
 let title;
 
@@ -31,13 +32,13 @@ marked.use({
 });
 
 app.set("view engine", "ejs");
-app.set("views", __dirname + "/pages/blog");
+app.set("views", __dirname + "/src/pages/blog");
 
-app.use("/", express.static(__dirname + "/pages"));
-app.use("/public", express.static(__dirname + "/public"));
+app.use("/", express.static(__dirname + "/src/pages"));
+app.use("/public", express.static(__dirname + "/src/public"));
 
 router.get("/", function (req, res) {
-    res.sendFile(__dirname + "/pages/index.html");
+    res.sendFile(pages + "/index.html");
 });
 
 /* router.get("/blog/:filename", function (req, res) {
@@ -54,10 +55,10 @@ router.get("/", function (req, res) {
     });
 }); */
 
-fs.readdir(__dirname + "/pages/blog", function (err, files) {
+fs.readdir(pages + "/blog", function (err, files) {
     files.forEach((file) => {
         const name = file.split(".")[0];
-        const filePath = __dirname + "/pages/blog/" + file;
+        const filePath = pages + "/blog/" + file;
         const fileContents = fs.readFileSync(filePath, "utf8");
         const html = marked.parse(fileContents);
 
