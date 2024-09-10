@@ -21,44 +21,6 @@ body {
     margin: 0;
 }
 
-@media only screen and (max-width: 1110px) {
-    #main {
-        display: block;
-    }
-
-    #information-view {
-        margin-top: 20px;
-        margin-left: 15px;
-        padding-top: 30px;
-        padding-left: 20px;
-        padding-right: 20px;
-        background: var(--color-a);
-        border-radius: 5%;
-
-        display: grid;
-        grid-template-columns: 25% 75%;
-    }
-
-    #avatar {
-        width: 100;
-    }
-
-    #information-text {
-        padding-left: 50px;
-    }
-
-    #information-text ul li img {
-        width: 8%;
-    }
-
-    #projects-blog {
-        margin-top: 50px;
-        margin-bottom: 50px;
-        margin-left: 50px;
-        margin-right: 25px;
-    }
-}
-
 #information-view {
     margin-top: 20px;
     margin-left: 15px;
@@ -230,4 +192,42 @@ body {
 
 .blog-item a:hover {
     color: #c7c7c7;
+}
+
+@media only screen and (max-width: 1110px) {
+    #main {
+        display: block;
+    }
+
+    #information-view {
+        margin-top: 20px;
+        margin-left: 15px;
+        padding-top: 30px;
+        padding-left: 20px;
+        padding-right: 20px;
+        background: var(--color-a);
+        border-radius: 5%;
+
+        display: grid;
+        grid-template-columns: 25% 75%;
+    }
+
+    #avatar {
+        width: 100;
+    }
+
+    #information-text {
+        padding-left: 50px;
+    }
+
+    #information-text ul li img {
+        width: 8%;
+    }
+
+    #projects-blog {
+        margin-top: 50px;
+        margin-bottom: 50px;
+        margin-left: 50px;
+        margin-right: 25px;
+    }
 }
