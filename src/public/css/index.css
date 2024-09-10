@@ -194,40 +194,44 @@ body {
     color: #c7c7c7;
 }
 
-@media only screen and (max-width: 1110px) {
+@media only screen and (max-width: 1000px) {
     #main {
-        display: block;
+        display: grid;
+        grid-template-columns: 1fr;
     }
 
     #information-view {
-        margin-top: 20px;
-        margin-left: 15px;
+        margin: auto;
+        margin-top: 25px;
         padding-top: 30px;
-        padding-left: 20px;
+        padding-left: 40px;
         padding-right: 20px;
+        padding-bottom: 30px;
         background: var(--color-a);
         border-radius: 5%;
-
+        width: 75%;
+        white-space: nowrap;
         display: grid;
         grid-template-columns: 25% 75%;
     }
 
     #avatar {
-        width: 100;
+        width: 100%;
+        margin-top: 50%;
     }
 
     #information-text {
-        padding-left: 50px;
+        padding-left: 20px;
     }
 
     #information-text ul li img {
-        width: 8%;
+        width: 15%;
     }
 
     #projects-blog {
         margin-top: 50px;
         margin-bottom: 50px;
-        margin-left: 50px;
-        margin-right: 25px;
+        margin-left: 40px;
+        margin-right: 20px;
     }
 }
