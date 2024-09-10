@@ -1,8 +1,7 @@
 FROM node:22-alpine
 RUN mkdir -p /home/node/app/node_modules
 WORKDIR /home/node/app
-COPY ./public ./public/
-COPY ./pages ./pages/
+COPY ./src ./src
 COPY package.json ./
 COPY package-lock.json ./
 COPY app.js ./
