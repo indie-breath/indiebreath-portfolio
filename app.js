@@ -41,20 +41,6 @@ router.get("/", function (req, res) {
     res.sendFile(pages + "/index.html");
 });
 
-/* router.get("/blog/:filename", function (req, res) {
-    const filename = req.params.filename;
-    const markdown = __dirname + "/pages/blog/" + filename + ".md";
-
-    fs.readFile(markdown, "utf8", function (err, data) {
-        if (err) {
-            res.send("File not found");
-        } else {
-            const html = marked.parse(data.toString());
-            res.send(html);
-        }
-    });
-}); */
-
 fs.readdir(pages + "/blog", function (err, files) {
     files.forEach((file) => {
         const name = file.split(".")[0];
