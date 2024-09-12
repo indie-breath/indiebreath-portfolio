@@ -8,6 +8,7 @@
 
 html {
     background-color: var(--color-a);
+    margin: 0;
 }
 
 div {
@@ -24,16 +25,25 @@ div {
     border-radius: 10px;
 }
 
+h1,
+h2 {
+    margin-top: 50px;
+}
+
 pre {
     background-color: var(--code-color);
     margin-left: 25px;
     padding: 5px 10px;
+    max-width: 100%;
     width: fit-content;
+    white-space: pre-wrap;
+    font-family: monospace;
 }
 
 img {
     margin: 0;
     width: 100%;
+    border: black 1px solid;
 }
 
 a {
@@ -43,4 +53,17 @@ a {
 
 a:hover {
     color: grey;
+}
+
+@media only screen and (max-width: 1110px) {
+    div {
+        width: 80%;
+        margin: auto;
+        margin-top: 20px;
+        padding: 20px 40px;
+    }
+
+    pre {
+        margin: 0;
+    }
 }
