@@ -1,9 +1,9 @@
 indiebreath.au:80 {
-    tls off
+    tls internal
     reverse_proxy web:3000
 }
 
 indiebreath.au:443 {
-    tls off
+    tls internal
     reverse_proxy web:3000
 }
