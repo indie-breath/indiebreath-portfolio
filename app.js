@@ -8,7 +8,7 @@ const fs = require("fs");
 const fm = require("front-matter");
 
 const port = 3000;
-const pages = __dirname + "/src/pages";
+const pages = __dirname + "/pages";
 
 let title;
 
@@ -32,10 +32,10 @@ marked.use({
 });
 
 app.set("view engine", "ejs");
-app.set("views", __dirname + "/src/pages/blog");
+app.set("views", __dirname + "/pages/blog");
 
-app.use("/", express.static(__dirname + "/src/pages"));
-app.use("/public", express.static(__dirname + "/src/public"));
+app.use("/", express.static(__dirname + "/pages"));
+app.use("/public", express.static(__dirname + "/public"));
 
 router.get("/", function (req, res) {
     res.sendFile(pages + "/index.html");
